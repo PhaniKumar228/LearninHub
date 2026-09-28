@@ -11,5 +11,7 @@ git config --global --list
 git config --list --show-origin
 git config --list --show-scope --show-origin
 
+git config --global --list
+
 #Search your whole machine for the project
 Get-ChildItem -Path C:\ -ErrorAction SilentlyContinue -Recurse -Hidden -Filter .git | Select-Object @{Name="Location";Expression={$_.Parent.FullName}}
